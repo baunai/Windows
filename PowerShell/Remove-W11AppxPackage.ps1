@@ -187,7 +187,7 @@ function Remove-AppxProvisionedPackageCustom {
     if ($($BlackListedApps.Count) -ne 0) {
         Write-Log -Message "The Following $($BlackListedApps.Count) apps were targeted for removal from the device:-"
         Write-Log -Message "Apps marked for removal:$($BlackListedApps)"
-        Write-Log -Message ""
+        Write-Log -Message "....."
         $BlackListedApps
 
         #Initialize list for apps not targeted
